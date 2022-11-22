@@ -1,5 +1,5 @@
 import {React} from 'react';
-import Chip from '../components/Chip';
+import Chip from '../components/PostListItem';
 import EmptyList from '../components/EmptyList';
 import Header from "../components/Header";
 import { Link } from 'react-router-dom';

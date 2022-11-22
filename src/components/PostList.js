@@ -1,10 +1,10 @@
 import React from 'react';
-import PostItem from './PostItem';
-const PostList = ({ posts, content }) => {
+import PostListItem from "./PostListItem";
+const PostList = ({ posts }) => {
   return (
     <div className='blogList-wrap'>
       {posts.map((post) => (
-        <PostItem post={post} content={content}/>
+        <PostListItem key={post.post_id} obj={post}/>
       ))}
     </div>
   );
