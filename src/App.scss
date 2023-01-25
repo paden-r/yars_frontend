@@ -1,14 +1,46 @@
-$font-stack: Helvetica, sans-serif;
+// Variables
+$primary-color: #ff69b4;
+$secondary-color: #333;
 
+// Body
 body {
-  font: 100% $font-stack;
-  background: #2a2a2a;
-  color: #fafafa;
+  background-color: $secondary-color;
+  color: $primary-color;
 }
 
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+}
 
-@mixin theme($theme: DarkGray) {
-  background: $theme;
-  box-shadow: 0 0 1px rgba($theme, .25);
-  color: #666;
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Buttons
+button {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: none;
+  padding: 0.5em 1em;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Blog post container
+.blog-post {
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  &:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  }
 }
